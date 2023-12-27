@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários HTML</title>
+</head>
+<body>
+  <main>
+    <h1>Formulário</h1>
+    <hr>
+    <hr>
+    <!-- Form: Estrutura que cria o formuçario 
+       action: Define o que vai ocorrer ao enviar o formuário, sem nada reseta a página
+       method: Parte de http   
+    -->
+    <form action="" method="post">
+          <!-- Input: Estrutura que funciona com diferentes propriedades, dependendo dos atributos -->
+          <div>
+            <label for="texto">Digite o que foi pedido</label> <!--Mostra ao que se refere o input. Colocar a mesma id pra identificar -->
+            <input type="text" id = "texto" placeholder="Informe o seu nome" name="Nome"><!-- 
+                type = "text" : Permite Digitar texto. "Placeholder":Texto de sugestão
+                "value"= Deixa uma informação pré-definida
+                type="radio" = Multipla escolha com uma certa apenas
+                "name" =
+                  --> 
+                <hr>
+                <hr>             
+         </div>
+         <div>
+              <label for="senha">Digite o que foi pedido</label>
+              <input type="password" placeholder="Digite sua Senha" name="senha" id="senha">
+               <hr>
+               <hr>
+         </div>
+         <div>
+              <label for="email">Digite o que foi pedido</label>
+              <input type="email" placeholder="Insira seu e-mail" name="email" id="email">
+              <hr>
+              <hr>
+         </div>
+         <div>
+            <label for="data">Insira a Data de Nascimento</label>
+            <input type="date" id="data"  name="data"> 
+              <hr>
+              <hr>
+        </div>
+        <div>
+           <label for="hora">Insira o horário</label>
+           <input type="time" id="hora" name="hora"> 
+            <hr>
+            <hr>
+      </div>
+       <div>
+         <label for="qualquer">Insira sua idade</label>
+         <input type="number" id="qualquer" name="qualquer"> 
+           <hr>
+           <hr>
+     </div>
+     <div>
+        <label for="qualquer">Adicione seu currículo</label>
+        <input type="file" id="qualquer" name="qualquer"> 
+          <hr>
+          <hr>
+    </div>  
+    <div>
+        <label for="qualquer">Insira o link de uma música que você ama</label>
+        <input type="url" id="qualquer" name="qualquer"> 
+          <hr>
+          <hr>
+    </div>
+    <div>
+        <label for="qualquer">Insira sua cor favorita</label>
+        <input type="color" id="qualquer" name="qualquer"> 
+          <hr>
+          <hr>
+    </div>
+    <div>
+        <label for="qualquer">Classifque sua fluência em Inglês</label>
+        <input type="range" id="qualquer" name="qualquer" value="0" max="200"> 
+          <hr>
+          <hr>
+    </div>
+    <div>
+        <label for="qualquer">Tem ensino médio completo ?</label>
+        <input type="checkbox" id="qualquer" name="qualquer"> 
+          <hr>
+          <hr>
+    </div>
+    <div>
+        <label for="qualquer">Tem ensino médio completo ?</label>
+        <input type="radio" id="qualquer" name="qualquer"> 
+          <hr>
+          <hr>
+    </div>
+    <div>
+        <label for="qualquer">Resetar Página ?</label>
+        <input type="reset" id="qualquer" name="qualquer" value="Reset"> 
+          <hr>
+          <hr>
+    </div>
+    <div>
+        <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+        <div>
+        <select name="select" id="select">
+            <option value="valor" disabled selected >Nível de Satisfação</option>
+            <!-- Quero que a opção comece selecionada mas não é possível de ser selecionada -->
+            <option value="valor">Bom</option>
+            <option value="valor">Razoável</option>
+            <option value="valor">Ruim</option>
+
+        </select>
+    </div>
+    <hr>
+    <hr>
+    </div>
+    <div>
+        <label for="qualquer"></label>
+        <input type="submit" id="qualquer" name="qualquer" value="Enviar"> 
+          <hr>
+          <hr>
+    </div>
+    </form>
+  </main>    
+</body>
+</html>
