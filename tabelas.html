@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<body>
+  <main>
+    <h1>Tabela em HTML</h1>
+      <section id ="Students">
+        <h2>Tabela de Alunos</h2>
+          <table border="2"> <!-- Tag Inicial para fazer uma tabela -->
+<!-- O border ="2" serve para ajudar a visualizar a tabela -->
+            <thead><!-- Cabeçalho da Tabela -->
+                  <tr> <!-- Cria uma linha dentro de uma tabela -->
+                     <th>Nome</th><!-- Cria a célula da tabela - th -->
+                     <th>E-mail</th>
+                     <th>Matrícula</th>                    
+                  </tr> 
+            </thead>
+            <tbody><!-- Corpo da tabela -->
+                  <tr>
+                      <td>Kikito</td> <!-- Dentro do body usa-se td -->
+                      <td>kikito.shaco@email.com</td>
+                      <td>1</td>
+                  </tr>
+                  <tr>
+                      <td>Silveira Eric</td>
+                      <td>silveirinha.vitoria@email.com</td>
+                      <td>2</td>
+                  </tr>
+                  <tr>
+                     <td>Bidu Mosovo</td>
+                     <td>bitous.deus@email.com</td>
+                     <td>3</td>
+                  </tr>
+            </tbody>
+          </table> 
+     </section>
+
+     <section id ="Finance">
+        <h2>Tabela de Finanças</h2>
+          <table border="2">
+            <thead>
+                  <tr>
+                   <th>Data</th> 
+                   <th>Tipo</th>
+                   <th>Descrição</th>
+                   <th>Valor</th>  
+                </tr>  
+            </thead>
+            <tbody>
+                <tr>
+                  <td rowspan="2">05/02/2012</td> <!-- rowspan mescla linhas, o número indica o tanto-->
+                  <td colspan="2">Despesa</td><!-- colspan mescla colunas, o número indica o tanto-->
+                  <!-- <td>Almoço</td> -->
+                  <td>R$120</td>
+                </tr>
+                <tr>                
+                  <td>Despesa</td>
+                  <td>Carro</td>
+                  <td>R$148.000</td>
+                </tr>
+            </tbody>
+          </table>
+     </section>
+  </main>    
+</body>
+</html>
